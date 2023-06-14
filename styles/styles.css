@@ -1,0 +1,112 @@
+@font-face {
+  font-family: "PT Sans";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/ptsans-400.woff2") format("woff2");
+  font-display: swap;
+}
+@font-face {
+  font-family: "PT Sans, sans-serif";
+  font-style: normal;
+  font-weight: 700;
+  src: url("../fonts/ptsans-700.woff2") format("woff2");
+  font-display: swap;
+}
+
+body {
+  font-family: "PT Sans, sans-serif";
+  font-size: 18px;
+  line-height: 21px;
+  background-color: #ffffff;
+  color: #333333;
+}
+
+.page-header {
+  color: #000000;
+  background-color: #ffffff;
+}
+
+.navigation-link {
+  font-family: "PT Sans, sans-serif";
+  font-size: 20px;
+  line-height: 24px;
+  font-weight: 700;
+  text-aling: center;
+  color: #000000;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.main-index {
+  color: #000000;
+  background-color: #ffffff;
+  background-image: url("../images/index-background.jpg");
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+  text-align: center;
+}
+
+.description {
+  text-align: center;
+}
+
+
+.description h2 {
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 36px;
+  text-transform: uppercase;
+}
+
+.description p {
+  font-size: 22px;
+  font-weight: 700;
+  line-height: 26px;
+  color:#333333
+}
+
+.description-top-text {
+  font-size: 22px;
+  line-height: 26px;
+}
+
+.description-title {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 28px;
+  text-transform: uppercase;
+}
+
+.description-item:first-child {
+  color: #FFFFFF;
+  background-color: #82B3D3;
+  text-decoration: none;
+}
+
+.description-item:last-child {
+  color: #FFFFFF;
+  background-color: #82B3D3;
+  text-decoration: none;
+}
+
+.description-item:first-child p {
+  color: #FFFFFF;
+}
+
+.description-item:last-child p {
+  color: #FFFFFF;
+}
+
+/*
+.description-item {
+  color: #FFFFFF;
+  background-color: #82B3D3;
+  text-decoration: none;
+}
+*/
+.advantages h2 {
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 36px;
+  text-transform: uppercase;
+}
