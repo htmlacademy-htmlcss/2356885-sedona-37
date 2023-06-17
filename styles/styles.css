@@ -6,38 +6,82 @@
   font-display: swap;
 }
 @font-face {
-  font-family: "PT Sans, sans-serif";
+  font-family: "PT Sans";
   font-style: normal;
   font-weight: 700;
   src: url("../fonts/ptsans-700.woff2") format("woff2");
   font-display: swap;
 }
 
-body {
-  font-family: "PT Sans, sans-serif";
-  font-size: 18px;
-  line-height: 21px;
-  background-color: #ffffff;
-  color: #333333;
+html {
+  height: 100%;
 }
 
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+  margin: 0;
+  font-family: "PT Sans" sans-serif;
+  font-size: 18px;
+  line-height: 21px;
+  color:#333333;
+  background-color: #F2F2F2;
+  min-width: 1280px;
+}
+
+.main-container {
+  flex-grow:1;
+}
+
+.navigation {
+display: flex;
+width: 1200px;
+margin: 0 auto;
+}
+
+.navigation-list {
+  wıdth: 340px;
+  margin: 0;
+  padding: 0;
+}
+
+.navigation-user {
+  width: 270px;
+  margin-left: auto;
+}
+
+.page-container {
+  width: 1200px;
+  margin: 0 auto;
+}
+
+.logo {
+  display: block;
+  margin: 0 auto;
+
+}
+.p
 .page-header {
   color: #000000;
   background-color: #ffffff;
 }
 
 .navigation-link {
-  font-family: "PT Sans, sans-serif";
+  font-family: "PT Sans";
   font-size: 20px;
   line-height: 24px;
   font-weight: 700;
   text-aling: center;
   color: #000000;
   text-decoration: none;
+}
+
+.navigation-item-link {
   text-transform: uppercase;
 }
 
-.main-index {
+.logo-background {
   color: #000000;
   background-color: #ffffff;
   background-image: url("../images/index-background.jpg");
@@ -51,23 +95,30 @@ body {
 }
 
 
-.description h2 {
+.description-top-title {
   font-size: 30px;
   font-weight: 700;
   line-height: 36px;
   text-transform: uppercase;
-}
-
-.description p {
-  font-size: 22px;
-  font-weight: 700;
-  line-height: 26px;
-  color:#333333
+  color: #000000;
 }
 
 .description-top-text {
   font-size: 22px;
+  font-weight: 700;
   line-height: 26px;
+}
+
+.description-list {
+  display: flex;
+}
+
+.description-item {
+  width: 400px;
+}
+
+.description-item-blue .description-title {
+color:#FFFFFF;
 }
 
 .description-title {
@@ -75,38 +126,124 @@ body {
   font-size: 24px;
   line-height: 28px;
   text-transform: uppercase;
+  color:#000000;
 }
 
-.description-item:first-child {
+.description-item-blue {
   color: #FFFFFF;
   background-color: #82B3D3;
   text-decoration: none;
 }
 
-.description-item:last-child {
-  color: #FFFFFF;
-  background-color: #82B3D3;
-  text-decoration: none;
+.description-item-light {
+  background-color: rgba(131, 179, 211, 0.12);
 }
 
-.description-item:first-child p {
-  color: #FFFFFF;
+.description-item-light-blue {
+  background-color: rgba(131, 179, 211, 0.2);
 }
 
-.description-item:last-child p {
-  color: #FFFFFF;
+.advantages {
+  text-align: center;
 }
 
-/*
-.description-item {
-  color: #FFFFFF;
-  background-color: #82B3D3;
-  text-decoration: none;
-}
-*/
-.advantages h2 {
+.advantages-top-title {
   font-size: 30px;
   font-weight: 700;
   line-height: 36px;
   text-transform: uppercase;
+  color:#000000;
+}
+
+.advantages-list {
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+.advantages-title {
+  font-size: 24px;
+  line-height: 28px;
+  color:#000000;
+  text-transform: uppercase;
+}
+
+.advantages-title-home {
+  color: #000000;
+  background-color: #ffffff;
+  background-image: url("../images/icons/icon-home.svg");
+  background-repeat: no-repeat
+
+}
+
+.advantages-item-food {
+  color: #000000;
+  background-color: #ffffff;
+  background-image: url("../images/icons/food.svg");
+  background-repeat: no-repeat
+}
+
+.advantages-item-gifts {
+  color: #000000;
+  background-color: #ffffff;
+  background-image: url("../images/icons/icon-gift.svg");
+  background-repeat: no-repeat
+}
+
+.action {
+  text-align: center;
+  }
+
+  .action-subtitle {
+    color: #000000;
+  }
+
+.button-brown {
+  border: none;
+    color: white;
+    padding: 8px 50px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 20px;
+    line-height: 36px;
+    cursor: pointer;
+    background-color: #756157;
+    text-transform: uppercase;
+}
+
+.subscribe {
+  color: #ffffff;
+  background-color: #000000;
+  background-image: url("../images/subscribe-background.jpg");
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+  text-align: center;
+}
+
+
+.button-blue {
+    border: none;
+    color: white;
+    padding: 8px 50px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 20px;
+    line-height: 36px;
+    cursor: pointer;
+    background-color: #82B3D3;
+    text-transform: uppercase;
+}
+
+.page-footer-phone {
+  color:#000000;
+  background-color: #ffffff;
+  text-decoration-line: none;
+  font-size: 40px;
+  line-height: 40px;
+  text-align: center;
+}
+.background-hero {
+  background-image: url("../images/index-background.jpg");
 }
