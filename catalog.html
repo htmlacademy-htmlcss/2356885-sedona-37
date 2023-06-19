@@ -10,7 +10,7 @@
   <body>
 
     <!--main header-->
-    <header class="page-header">
+    <header data-test="header" class="page-header">
       <nav class="navigation">
         <a class="logo-link" href="#">
           <img src="images/logo.svg" widht="140" height="70" alt="Логотип гостиницы Седона">
@@ -26,20 +26,20 @@
             <a class="navigation-link" href="#">Гостиницы</a>
           </li>
         </ul>
-        <ul class="navigation-list navigation-user">
-          <li class="navigation-item">
-            <a class="navigation-link" href="#">
+        <ul class="user-navigation-list">
+          <li class="user-navigation-item">
+            <a class="user-navigation-link" href="#">
               <span class="visually-hidden">Поиск</span>
               <img src="images/icons/search.svg" width="18" height="18" alt="Поиск">
             </a>
           </li>
-          <li class="navigation-item">
-            <a class="navigation-link" href="#">
+          <li class="user-navigation-item">
+            <a class="user-navigation-link" href="#">
               <span class="visually-hidden">Избранное</span>
               <img src="images/icons/favourites.svg" width="18" height="17" alt="Избранное">
             </a>
           </li>
-          <li class="navigation-item-link">
+          <li class="user-navigation-item-link">
             <button class="button-brown" type="button">
               Хочу сюда!
             </button>
@@ -128,8 +128,8 @@
             <legend class="catalog-filter-title">Стоимость, ₽:</legend>
           </fieldset>
 
-          <button class="button" type="submit">Применить</button>
-          <button class="button" type="reset">Сбросить</button>
+          <button class="button-blue catalog-button" type="submit">Применить</button>
+          <button class="catalog-button" type="reset">Сбросить</button>
         </form>
       </section>
     </div>
@@ -149,7 +149,7 @@
             <span class="visually-hidden">Показать карточки</span>
           </a>
           <a class="button button-light" href="#">
-            <span class="visually-hidden">Показать карточки</span>
+            <span class="visually-hidden">Показать слайдшоу</span>
           </a>
           <a class="button button-light" href="#">
             <span class="visually-hidden">Показать список</span>
@@ -246,44 +246,48 @@
         </ul>
       </section>
 
-      <!--section-mailing-->
-      <section class="subscription">
-        <h2 class="subscription-title">Подпишитесь на рассылку</h2>
-        <p class="subscription-subtitle">Только полезная информация и никакого спама, честное бойскаутское!</p>
-        <form action="https://echo.htmlacademy.ru/" method="post">
-          <label for="subscription-field" class="visually-hidden">Ваш e-mail</label>
-          <input type="email" name="subscription" id="subscription-field" placeholder="Ваш e-mail" required>
-          <button class="button-blue" type="submit">Подписаться</button>
-        </form>
-      </section>
+    <!--section-mail-->
+    <section class="catalog-subscribe">
+      <h2 class="subscription-title">Подпишитесь на рассылку</h2>
+      <p class="subscription-subtitle">Только полезная информация и никакого спама, честное бойскаутское!</p>
+      <form action="https://echo.htmlacademy.ru/" method="post">
+        <label for="subscription-field" class="visually-hidden">Ваш e-mail</label>
+        <input type="email" name="subscription" id="subscription-field" placeholder="Ваш e-mail" required>
+        <button class="button-blue" type="submit">Подписаться</button>
+      </form>
+    </section>
+  </div>
+  </main>
 
-    </main>
-
-    <!--footer-->
-    <footer class="page-footer">
-      <ul class="page-footer-list">
-        <li class="page-footer-item">
-          <a class="button" href="https://vk.com/htmlacademy">
-            <span class="visually-hidden">ВКонтакте</span>
-          </a>
-        <li class="page-footer-item">
-          <a class="button" href="https://t.me/htmlacademy ">
-            <span class="visually-hidden">Телеграм</span>
-          </a>
-        </li>
-        <li class="page-footer-item">
-          <a class="button" href=" https://www.youtube.com/user/htmlacademyru ">
-            <span class="visually-hidden">Ютьюб</span>
-          </a>
-        </li>
-      </ul>
-      <a class="page-footer-phone" href="tel:+78128121212">+7 (812) 812-12-12</a>
-      <p>
-        <a class="htmlacademy-link" href=" https://htmlacademy.ru/">
-          <img src="images/HTML-Academy.svg" alt="Логотип HTML Academy">
+  <!--footer-->
+  <footer class="page-footer">
+    <div class="page-footer-container">
+    <ul class="page-footer-list">
+      <li class="page-footer-item">
+        <a class="button" href="https://vk.com/htmlacademy">
+          <span class="visually-hidden">ВКонтакте</span>
+          <img src="images/vk.svg" width="24" height="14" alt="В контакте">
         </a>
-      </p>
-    </footer>
+      </li>
+      <li class="page-footer-item">
+        <a class="button" href="https://t.me/htmlacademy ">
+          <span class="visually-hidden">Телеграм</span>
+          <img src="images/telegram.svg" width="18" height="15" alt="Телеграм">
+        </a>
+      </li>
+      <li class="page-footer-item">
+        <a class="button" href=" https://www.youtube.com/user/htmlacademyru ">
+          <span class="visually-hidden">Ютьюб</span>
+          <img src="images/youtube.svg" width="22" height="17" alt="Ютьюб">
+        </a>
+      </li>
+    </ul>
+    <a class="page-footer-phone" href="tel:+78128121212">+7 (812) 812-12-12</a>
+    <a class="htmlacademy-link" href="https://htmlacademy.ru/">
+      <img src="images/HTML-Academy.svg" alt="Логотип HTML Academy">
+    </a>
+  </div>
+  </footer>
   </body>
 
 </html>
